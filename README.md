@@ -24,4 +24,10 @@ Run continuously:
 python scripts/social_buyer_listener_rss.py --config assets/config.example.json --loop --interval 30
 ```
 
+Publish future optimizations to the same GitHub repository:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File scripts/publish_update.ps1 -Message "Update buyer scoring"
+```
+
 This skill intentionally works only with public data and does not automate private LinkedIn/Facebook surfaces.
