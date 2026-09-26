@@ -1,0 +1,6 @@
+results/
+*.sqlite
+*.sqlite-journal
+__pycache__/
+*.pyc
+.env

@@ -1,0 +1,105 @@
+{
+  "feeds": [
+    {
+      "name": "google-news-linkedin-baby-feeding-set",
+      "platform": "LinkedIn",
+      "rss_url": "https://news.google.com/rss/search?q=%22baby%20feeding%20set%22%20%28site%3Alinkedin.com%20OR%20site%3Alinkedin.com%2Fposts%29%20%28looking%20for%20OR%20supplier%20OR%20quote%20OR%20wholesale%20OR%20MOQ%20OR%20inquiry%29&hl=en-US&gl=US&ceid=US:en"
+    },
+    {
+      "name": "google-news-facebook-baby-feeding-set",
+      "platform": "Facebook",
+      "rss_url": "https://news.google.com/rss/search?q=%22baby%20feeding%20set%22%20%28site%3Afacebook.com%20OR%20site%3Afacebook.com%2Fgroups%29%20%28looking%20for%20OR%20supplier%20OR%20quote%20OR%20wholesale%20OR%20MOQ%20OR%20inquiry%29&hl=en-US&gl=US&ceid=US:en"
+    },
+    {
+      "name": "google-news-linkedin-wheat-straw-lunch-box",
+      "platform": "LinkedIn",
+      "rss_url": "https://news.google.com/rss/search?q=%22wheat%20straw%20lunch%20box%22%20%28site%3Alinkedin.com%20OR%20site%3Alinkedin.com%2Fposts%29%20%28looking%20for%20OR%20supplier%20OR%20quote%20OR%20wholesale%20OR%20MOQ%20OR%20inquiry%29&hl=en-US&gl=US&ceid=US:en"
+    },
+    {
+      "name": "google-news-facebook-wheat-straw-lunch-box",
+      "platform": "Facebook",
+      "rss_url": "https://news.google.com/rss/search?q=%22wheat%20straw%20lunch%20box%22%20%28site%3Afacebook.com%20OR%20site%3Afacebook.com%2Fgroups%29%20%28looking%20for%20OR%20supplier%20OR%20quote%20OR%20wholesale%20OR%20MOQ%20OR%20inquiry%29&hl=en-US&gl=US&ceid=US:en"
+    }
+  ],
+  "scoring": {
+    "product_keywords": [
+      "baby feeding set",
+      "wheat straw lunch box",
+      "小麦秸秆午餐盒",
+      "小麦秸秆"
+    ],
+    "intent_keywords": [
+      "采购",
+      "询价",
+      "报价",
+      "供货",
+      "进货",
+      "MOQ",
+      "起订",
+      "样品",
+      "货期",
+      "寻求供应商",
+      "looking for",
+      "supplier",
+      "inquiry",
+      "quote",
+      "wholesale",
+      "lead time"
+    ],
+    "buyer_role_keywords": [
+      "采购",
+      "供应链",
+      "进口商",
+      "分销商",
+      "buyer",
+      "procurement",
+      "sourcing",
+      "importer",
+      "distributor",
+      "retailer"
+    ],
+    "supplier_promo_keywords": [
+      "manufacturer",
+      "factory",
+      "oem",
+      "odm",
+      "we supply",
+      "our products",
+      "direct factory",
+      "厂家",
+      "工厂",
+      "源头厂家",
+      "支持定制"
+    ],
+    "positive_patterns": [
+      "请问",
+      "请发",
+      "可以给",
+      "能否",
+      "请报价",
+      "求报价",
+      "有货源吗",
+      "can you quote",
+      "how much",
+      "what is the price",
+      "looking for supplier"
+    ],
+    "score_weights": {
+      "product_keyword": 10,
+      "intent_keyword": 8,
+      "positive_signal": 8,
+      "question_bonus": 6,
+      "buyer_profile_bonus": 10,
+      "supplier_penalty": 18
+    },
+    "min_score": 35,
+    "max_results_per_run": 100
+  },
+  "state_db_path": "state_auto.sqlite",
+  "output_csv_path": "results/social_leads_auto.csv",
+  "webhook_url": "",
+  "loop": {
+    "enabled": false,
+    "interval_minutes": 30
+  }
+}

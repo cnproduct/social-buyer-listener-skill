@@ -1,0 +1,99 @@
+{
+  "feeds": [
+    {
+      "name": "linkedin-google-alert",
+      "platform": "LinkedIn",
+      "rss_url": "https://www.google.com/alerts/feeds/REPLACE_WITH_LINKEDIN_ALERT_RSS"
+    },
+    {
+      "name": "facebook-google-alert",
+      "platform": "Facebook",
+      "rss_url": "https://www.google.com/alerts/feeds/REPLACE_WITH_FACEBOOK_ALERT_RSS"
+    }
+  ],
+  "scoring": {
+    "product_keywords": [
+      "baby feeding set",
+      "wheat straw lunch box",
+      "小麦秸秆午餐盒",
+      "小麦秸秆"
+    ],
+    "intent_keywords": [
+      "采购",
+      "询价",
+      "报价",
+      "供货",
+      "进货",
+      "MOQ",
+      "起订",
+      "量产",
+      "样品",
+      "货期",
+      "长期合作",
+      "寻求供应商",
+      "looking for",
+      "supplier",
+      "inquiry",
+      "quote",
+      "wholesale",
+      "lead time"
+    ],
+    "buyer_role_keywords": [
+      "采购",
+      "采购经理",
+      "采购总监",
+      "供应链",
+      "进口商",
+      "分销商",
+      "buyer",
+      "procurement",
+      "sourcing",
+      "importer",
+      "distributor",
+      "retailer"
+    ],
+    "supplier_promo_keywords": [
+      "manufacturer",
+      "factory",
+      "oem",
+      "odm",
+      "we supply",
+      "our products",
+      "direct factory",
+      "厂家",
+      "工厂",
+      "源头厂家",
+      "支持定制"
+    ],
+    "positive_patterns": [
+      "请问",
+      "请发",
+      "可以给",
+      "能否",
+      "请报价",
+      "求报价",
+      "有货源吗",
+      "can you quote",
+      "how much",
+      "what is the price",
+      "looking for supplier"
+    ],
+    "score_weights": {
+      "product_keyword": 10,
+      "intent_keyword": 8,
+      "positive_signal": 8,
+      "question_bonus": 6,
+      "buyer_profile_bonus": 10,
+      "supplier_penalty": 18
+    },
+    "min_score": 35,
+    "max_results_per_run": 100
+  },
+  "state_db_path": "state.sqlite",
+  "output_csv_path": "results/social_leads.csv",
+  "webhook_url": "",
+  "loop": {
+    "enabled": false,
+    "interval_minutes": 30
+  }
+}
